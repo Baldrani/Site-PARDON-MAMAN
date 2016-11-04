@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PARDON MAMAN | Tattoo & Piercing</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/jssor.slider.min.js"></script>
+    <script>
+    jssor_slider1_starter = function (containerId) {
+
+        var _SlideshowTransitions = [
+        //Fade
+        { $Duration: 1200, $Opacity: 2 }
+        ];
+
+        var options = {
+            $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+            $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+            $AutoPlayInterval: 3000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+            $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+            $ArrowKeyNavigation: true,                    //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+            $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+            $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+            //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+            //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+            $SlideSpacing: 0,                           //[Optional] Space between each slide in pixels, default value is 0
+            $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+            $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+            $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+            $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+            $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+            $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                $ShowLink: true                                 //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+            },
+
+            $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                $SpacingX: 10,                                  //[Optional] Horizontal space between each item in pixel, default value is 0
+                $SpacingY: 10,                                  //[Optional] Vertical space between each item in pixel, default value is 0
+                $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+            },
+
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+            }
+
+        };
+
+
+        var jssor_slider1 = new $JssorSlider$(containerId, options);
+
+        //responsive code begin
+        //you can remove responsive code if you don't want the slider scales
+        //while window resizes
+        function ScaleSlider() {
+            var parentWidth = $('#slider1_container').parent().width();
+            if (parentWidth) {
+                jssor_slider1.$ScaleWidth(parentWidth);
+            }
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+        //Scale slider after document ready
+        ScaleSlider();
+
+        //Scale slider while window load/resize/orientationchange.
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        //responsive code end
+        };
+
+    </script>
+
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">PARDON MAMAN</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">A Propos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Nos Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#photosetvideos">Photos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">PARDON</h1>
+                <h1 id="homeHeading">MAMAN</h1>
+                <hr>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">En savoir plus</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-heading text-center">Qui sommes nous ?</h2>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2 col-xs-12 text-center"><h3>Ben</h3></div>
+                <div class="col-lg-2 col-xs-12 text-center"><h3>Chankar</h3></div>
+                <div class="col-lg-2 col-xs-12 text-center"><h3>David</h3></div>
+                <div class="col-lg-2 col-xs-12 text-center"><h3>Jibé</h3></div>
+                <div class="col-lg-2 col-xs-12 text-center"><h3>John Stone</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <hr class="light">
+                    <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-xs-12 text-center">
+                    <img src="img/logo.png" alt="Logo Pardon Maman" style="
+    width: 50%;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 10%;
+    top: 25px;"/>
+                </div>
+                <div class="col-lg-6 col-xs-12 text-center">
+                    <img src="img/snat.png" alt="Logo Pardon Maman" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-12 text-center">
+                       <h2 class="section-heading">A votre service</h2>
+                       <hr class="primary">
+                   </div>
+               </div>
+           </div>
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-3 col-md-6 text-center">
+                       <div class="service-box">
+                           <i class="fa fa-4x fa-eyedropper text-primary sr-icons"></i>
+                           <h3>Tatoos</h3>
+                           <p class="text-muted">Tatouages sur Paris!</p>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 text-center">
+                       <div class="service-box">
+                           <i class="fa fa-4x fa-circle-o-notch text-primary sr-icons"></i>
+                           <h3>Piercing</h3>
+                           <p class="text-muted">Piercing sur paris!</p>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 text-center">
+                       <div class="service-box">
+                           <i class="fa fa-4x fa-medkit text-primary sr-icons"></i>
+                           <h3>Hygiène</h3>
+                           <p class="text-muted">Votre santé est une priorité c'est pour ça que l'hygiène est d'or.</p>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 text-center">
+                       <div class="service-box">
+                           <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                           <h3>Conseil</h3>
+                           <p class="text-muted">Nous sommes des passionés de tatoo/piercing et nous saurons vous conseiller.</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <section class="no-padding" id="portfolio">
+           <div class="container-fluid">
+               <div class="row no-gutter popup-gallery">
+                   <div class="col-lg-4 col-sm-6">
+                       <a href="img/portfolio/ben.jpg" class="portfolio-box">
+                           <img src="img/portfolio/ben.jpg" class="img-responsive" alt="">
+                           <div class="portfolio-box-caption">
+                               <div class="portfolio-box-caption-content">
+                                   <div class="project-category text-faded">
+                                       Tatoos
+                                   </div>
+                                   <div class="project-name">
+                                       Ben
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+                   </div>
+                   <div class="col-lg-4 col-sm-6">
+                       <a href="img/portfolio/chankar.jpg" class="portfolio-box">
+                           <img src="img/portfolio/chankar.jpg" class="img-responsive" alt="">
+                           <div class="portfolio-box-caption">
+                               <div class="portfolio-box-caption-content">
+                                   <div class="project-category text-faded">
+                                       Tatoos
+                                   </div>
+                                   <div class="project-name">
+                                       Chankar
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+                   </div>
+                   <div class="col-lg-4 col-sm-6">
+                       <a href="img/portfolio/david.jpg" class="portfolio-box">
+                           <img src="img/portfolio/david.jpg" class="img-responsive" alt="">
+                           <div class="portfolio-box-caption">
+                               <div class="portfolio-box-caption-content">
+                                   <div class="project-category text-faded">
+                                       Tatoos
+                                   </div>
+                                   <div class="project-name">
+                                       David
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+                   </div>
+                   <div class="col-lg-4 col-sm-6">
+                       <a href="img/portfolio/jibe.jpg" class="portfolio-box">
+                           <img src="img/portfolio/jibe.jpg" class="img-responsive" alt="">
+                           <div class="portfolio-box-caption">
+                               <div class="portfolio-box-caption-content">
+                                   <div class="project-category text-faded">
+                                       Tatoos
+                                   </div>
+                                   <div class="project-name">
+                                       Jibé
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+                   </div>
+                   <div class="col-lg-4 col-sm-6">
+                       <a href="img/portfolio/john_stone.jpg" class="portfolio-box">
+                           <img src="img/portfolio/john_stone.jpg" class="img-responsive" alt="">
+                           <div class="portfolio-box-caption">
+                               <div class="portfolio-box-caption-content">
+                                   <div class="project-category text-faded">
+                                       Tatoos
+                                   </div>
+                                   <div class="project-name">
+                                       John Stone
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+                   </div>
+                   <div class="col-lg-4 col-sm-6">
+                       <a href="img/portfolio/tatoueur.jpg" class="portfolio-box">
+                           <img src="img/portfolio/tatoueur.jpg" class="img-responsive" alt="">
+                           <div class="portfolio-box-caption">
+                               <div class="portfolio-box-caption-content">
+                                   <div class="project-category text-faded">
+                                       Tatoueurs
+                                   </div>
+                                   <div class="project-name">
+                                       Les tatoueurs en action!
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+    <section class="no-padding" id="photosetvideos" style="background-color: #000; color:#fff; padding-top:50px; padding-bottom: 50px;">
+        <div class="container-fluid">
+            <h2 class="text-center">Nos Photos</h2>
+            <br>
+            <div class="col-xs-10 col-xs-offset-1">
+                    <!--#region Jssor Slider Begin -->
+                    <!-- To move inline styles to css file/block, please specify a class name for each element. -->
+                    <div id="slider1_container" style="position: relative; width:800px;
+                        height: 450px; border-radius:5px; overflow: hidden; margin:auto;">
+
+                        <!-- Slides Container -->
+                        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 450px;
+                            overflow: hidden;">
+                            <div><img u="image" src="img/portfolio/ben.jpg" /></div>
+                            <div><img u="image" src="img/portfolio/chankar.jpg" /></div>
+                            <div><img u="image" src="img/portfolio/david.jpg" /></div>
+                            <div><img u="image" src="img/portfolio/jibe.jpg" /></div>
+                        </div>
+
+                        <!--#region Bullet Navigator Skin Begin -->
+                        <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+                        <style>
+                            /* jssor slider bullet navigator skin 01 css */
+                            /*
+                            .jssorb01 div           (normal)
+                            .jssorb01 div:hover     (normal mouseover)
+                            .jssorb01 .av           (active)
+                            .jssorb01 .av:hover     (active mouseover)
+                            .jssorb01 .dn           (mousedown)
+                            */
+                            .jssorb01 {
+                                position: absolute;
+                            }
+                            .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+                                position: absolute;
+                                /* size of bullet elment */
+                                width: 12px;
+                                height: 12px;
+                                filter: alpha(opacity=70);
+                                opacity: .7;
+                                overflow: hidden;
+                                cursor: pointer;
+                                border: #000 1px solid;
+                            }
+                            .jssorb01 div { background-color: gray; }
+                            .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+                            .jssorb01 .av { background-color: #fff; }
+                            .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+                            /* jssor slider arrow navigator skin 09 css */
+                            /*
+                            .jssora09l                  (normal)
+                            .jssora09r                  (normal)
+                            .jssora09l:hover            (normal mouseover)
+                            .jssora09r:hover            (normal mouseover)
+                            .jssora09l.jssora09ldn      (mousedown)
+                            .jssora09r.jssora09rdn      (mousedown)
+                            */
+                            .jssora09l, .jssora09r {
+                                display: block;
+                                position: absolute;
+                                /* size of arrow element */
+                                width: 50px;
+                                height: 50px;
+                                cursor: pointer;
+                                background: url(img/a09.png) no-repeat;
+                                overflow: hidden;
+                                opacity: .4;
+                                filter: alpha(opacity=40);
+                            }
+                            .jssora09l { background-position: -5px -35px; }
+                            .jssora09r { background-position: -65px -35px; }
+                            .jssora09l:hover { background-position: -5px -35px; opacity: .8; filter:alpha(opacity=80); }
+                            .jssora09r:hover { background-position: -65px -35px; opacity: .8; filter:alpha(opacity=80); }
+                            .jssora09l.jssora09ldn { background-position: -5px -35px; opacity: .3; filter:alpha(opacity=30); }
+                            .jssora09r.jssora09rdn { background-position: -65px -35px; opacity: .3; filter:alpha(opacity=30); }
+                        </style>
+                        <!-- Arrow Left -->
+                        <span u="arrowleft" class="jssora09l" style="top: 200px; left: 8px;">
+                        </span>
+                        <!-- Arrow Right -->
+                        <span u="arrowright" class="jssora09r" style="top: 200px; right: 8px;">
+                        </span>
+                        <!-- bullet navigator container -->
+                        <div u="navigator" class="jssorb01" style="bottom: 16px; right: 10px;">
+                        <!-- bullet navigator item prototype -->
+                        <div u="prototype"></div>
+
+                        </div>
+                        <!--#endregion Bullet Navigator Skin End -->
+                    </div>
+                    <!--#endregion Jssor Slider End -->
+                    <script>
+                        jssor_slider1_starter('slider1_container');
+                    </script>
+            </div><!-- End Row -->
+        </jssor_slider1_starter('slider1_container');>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xs-12 text-center">
+                    <h3 class="section-heading">Réseau Sociaux</h3>
+                    <hr class="primary">
+                    <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/pages/Pardon-Maman/412601872127725" data-width="250" data-height="420" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=249643311490&amp;container_width=275&amp;height=420&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FPardon-Maman%2F412601872127725&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=250"><span style="vertical-align: bottom; width: 250px; height: 214px;"><iframe name="f1bc2c920e96d1" width="250px" height="420px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/page.php?app_id=249643311490&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FfTmIQU3LxvB.js%3Fversion%3D42%23cb%3Df29a34cf29925dc%26domain%3Dpardon-maman.com%26origin%3Dhttps%253A%252F%252Fpardon-maman.com%252Ff3dfb6d7df8af78%26relation%3Dparent.parent&amp;container_width=275&amp;height=420&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FPardon-Maman%2F412601872127725&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=250" style="border: none; visibility: visible; width: 250px; height: 214px;" class=""></iframe></span></div>
+                    <br>
+                    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2dbd32894063b53338de1c1d4a747ea9.fr.html#dnt=false&amp;id=twitter-widget-0&amp;lang=fr&amp;screen_name=PardonMaman&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1478267328477" style="position: static; visibility: visible; width: 150px; height: 20px;" data-screen-name="PardonMaman"></iframe>
+                    <br><br>
+                </div>
+                <div class="col-lg-4 col-xs-12 text-center">
+                    <h3 class="section-heading">Nous Contacter</h3>
+                    <hr class="primary">
+                    <br>
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>09 52 95 67 55</p>
+                    <br>
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                </div>
+                <div class="col-lg-4 col-xs-12 text-center">
+                    <h3 class="section-heading">Nous Trouver</h3>
+                    <hr class="primary">
+                    Ouvert du Lundi au Samedi 11h - 19h
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.9847812514113!2d2.5204779156736987!3d48.839428979285636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60d932f702601%3A0xf74517d74d575546!2s2+Boulevard+du+G%C3%A9n%C3%A9ral+Gallieni%2C+94360+Bry-sur-Marne!5e0!3m2!1sfr!2sfr!4v1478267131367" width="auto"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        © PARDON MAMAN - 2016
+    </footer>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
