@@ -67,6 +67,10 @@ aside {
     padding: 50px 0;
 }
 
+img{
+    max-width: 100%;
+}
+
 .no-padding {
     padding: 0;
 }
@@ -95,15 +99,18 @@ aside {
         text-transform: uppercase;
     }
     .nav {
-        > li {
             > a,
             > a:focus {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
                 color: @gray-darker;
+                padding: 20px;
+                line-height: 50px;
+                text-decoration: none;
                 &:hover {
                     color: @theme-primary;
+                    text-decoration: none;
                 }
             }
             &.active {
@@ -116,7 +123,37 @@ aside {
                     }
                 }
             }
-        }
+            .subMenu{
+                position: absolute;
+                background: #fff;
+                padding: 20px;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin-bottom: -5px;
+                    li,
+                    li:focus {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 13px;
+                        color: @gray-darker;
+                        line-height: 30px;
+                        &:hover {
+                            color: @theme-primary;
+                        }
+                        a:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .linkSubMenu:hover+.subMenu, .subMenu:hover {
+                visibility: visible;
+                opacity: 1;
+            }
     }
     @media (min-width: 768px) {
         background-color: transparent;
@@ -358,4 +395,83 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @gray-darker;
+}
+
+.portfolio-box{
+    max-width: 650px;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.img-responsive{
+    max-width: 650px;
+}
+
+.navbar-default{
+    background-color: #fff;
+}
+
+.navbar-default .nav>li>a{
+    color: #606060;
+}
+
+header {
+    background-image: url(https://pardonmaman.files.wordpress.com/2015/02/pardon-maman-tattoo-piercing-_-tatoueur-john-stone-work.jpg);
+}
+
+#about {
+    background-image: url("../img/fond2.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about h2{
+    color: #fff;
+}
+#about h3{
+    color: #fff;
+}
+
+.text-primary{
+    color:#c82300;
+}
+
+h3:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+h3{
+    transition: all .3s ease;
+}
+ h2{
+     font-family: 'Shrikhand', cursive;
+ }
+
+ @media(max-width: 1200px){
+     [src="img/logo.png"]{
+         left: 0 !important;
+         width: 30% !important;
+         margin-bottom: 60px;
+     }
+ }
+
+ #homeHeading {
+    text-shadow: 2px 2px #c82300;
+}
+
+.white{
+    color:#fff;
+}
+
+.page-scroll:hover,.page-scroll:activer{
+    color: #c82300;
+}
+
+[alt="Logo Pardon Maman"]{
+    width: 50%;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 10%;
+    top: 25px;
 }
