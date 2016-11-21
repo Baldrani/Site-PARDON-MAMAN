@@ -144,8 +144,12 @@ img{
                         &:hover {
                             color: @theme-primary;
                         }
+                        a{
+                            color: @gray-darker;
+                        }
                         a:hover{
                             text-decoration: none;
+                            color: @theme-primary;
                         }
                     }
                 }
@@ -159,7 +163,7 @@ img{
         background-color: transparent;
         border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
-            color: fade(white, 70%);
+            color: @theme-primary;
             &:hover,
             &:focus {
                 color: white;
