@@ -65,3 +65,19 @@ h3{
          margin-bottom: 60px;
      }
  }
+
+ #homeHeading {
+    text-shadow: 2px 2px #c82300;
+}
+
+.white{
+    color:#fff;
+}
+
+#about a{
+
+}
+
+.page-scroll:hover,.page-scroll:activer{
+    color: #c82300;
+}
