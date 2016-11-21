@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 html,
 body {
   height: 100%;
@@ -12,7 +7,7 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
-  border-color: #F05F40;
+  border-color: #c82300;
   border-width: 3px;
   max-width: 50px;
 }
@@ -23,11 +18,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #F05F40;
+  color: #c82300;
 }
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: #951a00;
 }
 h1,
 h2,
@@ -43,7 +38,7 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: #F05F40;
+  background-color: #c82300;
 }
 .bg-dark {
   background-color: #222222;
@@ -58,6 +53,9 @@ section {
 aside {
   padding: 50px 0;
 }
+img {
+  max-width: 100%;
+}
 .no-padding {
   padding: 0;
 }
@@ -70,14 +68,14 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #F05F40;
+  color: #c82300;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #eb3812;
+  color: #951a00;
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
@@ -85,25 +83,63 @@ aside {
   color: #222222;
   text-transform: uppercase;
 }
-.navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
+.navbar-default .nav > a,
+.navbar-default .nav > a:focus {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
   color: #222222;
+  padding: 20px;
+  line-height: 50px;
+  text-decoration: none;
 }
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
+.navbar-default .nav > a:hover,
+.navbar-default .nav > a:focus:hover {
+  color: #c82300;
+  text-decoration: none;
 }
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
+.navbar-default .nav.active > a,
+.navbar-default .nav.active > a:focus {
+  color: #c82300 !important;
   background-color: transparent;
 }
-.navbar-default .nav > li.active > a:hover,
-.navbar-default .nav > li.active > a:focus:hover {
+.navbar-default .nav.active > a:hover,
+.navbar-default .nav.active > a:focus:hover {
   background-color: transparent;
+}
+.navbar-default .nav .subMenu {
+  position: absolute;
+  background: #fff;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.navbar-default .nav .subMenu ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: -5px;
+}
+.navbar-default .nav .subMenu ul li,
+.navbar-default .nav .subMenu ul li:focus {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  color: #222222;
+  line-height: 30px;
+}
+.navbar-default .nav .subMenu ul li:hover,
+.navbar-default .nav .subMenu ul li:focus:hover {
+  color: #c82300;
+}
+.navbar-default .nav .subMenu ul li a:hover,
+.navbar-default .nav .subMenu ul li:focus a:hover {
+  text-decoration: none;
+}
+.navbar-default .nav .linkSubMenu:hover + .subMenu,
+.navbar-default .nav .subMenu:hover {
+  visibility: visible;
+  opacity: 1;
 }
 @media (min-width: 768px) {
   .navbar-default {
@@ -130,12 +166,12 @@ aside {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #F05F40;
+    color: #c82300;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #951a00;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -143,7 +179,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40;
+    color: #c82300;
   }
 }
 header {
@@ -233,7 +269,7 @@ header .header-content .header-content-inner p {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(200, 35, 0, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -281,7 +317,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #F05F40;
+  color: #c82300;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -337,8 +373,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: white;
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #c82300;
+  border-color: #c82300;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -350,8 +386,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #ee4b28;
-  border-color: #ed431f;
+  background-color: #af1f00;
+  border-color: #a41d00;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -376,11 +412,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #c82300;
+  border-color: #c82300;
 }
 .btn-primary .badge {
-  color: #F05F40;
+  color: #c82300;
   background-color: white;
 }
 .btn {
@@ -413,4 +449,115 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+.portfolio-box {
+  max-width: 650px;
+  max-height: 350px;
+  overflow: hidden;
+}
+.img-responsive {
+  max-width: 650px;
+}
+.navbar-default {
+  background-color: #fff;
+}
+.navbar-default .nav > li > a {
+  color: #606060;
+}
+header {
+  background-image: url(https://pardonmaman.files.wordpress.com/2015/02/pardon-maman-tattoo-piercing-_-tatoueur-john-stone-work.jpg);
+}
+#about {
+  background-image: url("../img/fond2.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#about h2 {
+  color: #fff;
+}
+#about h3 {
+  color: #fff;
+}
+.text-primary {
+  color: #c82300;
+}
+h3:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+h3 {
+  transition: all .3s ease;
+}
+h2 {
+  font-family: 'Shrikhand', cursive;
+}
+@media (max-width: 1200px) {
+  [src="img/logo.png"] {
+    left: 0 !important;
+    width: 30% !important;
+    margin-bottom: 60px;
+  }
+}
+#homeHeading {
+  text-shadow: 2px 2px #c82300;
+}
+.white {
+  color: #fff;
+}
+.page-scroll:hover,
+.page-scroll:activer {
+  color: #c82300;
+}
+[alt="Logo Pardon Maman"] {
+  width: 50%;
+  transform: rotate(-45deg);
+  position: relative;
+  left: 10%;
+  top: 25px;
+}
+#about h3 {
+  color: #fff;
+  font-weight: 700;
+}
+#about h3 a,
+#about h3 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#aboutJohnStone {
+  background-image: url(https://pardonmaman.files.wordpress.com/2015/02/pardon-maman-tattoo-piercing-_-tatoueur-john-stone-work.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  display: block;
+  height: 100%;
+  position: relative;
+}
+#aboutJohnStone .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#aboutJohnStone p {
+  background-color: rgba(128, 128, 128, 0.56);
+  border-radius: 15px;
+}
+#aboutJohnStone h2 {
+  text-shadow: 2px 2px #c82300;
+}
+#creation {
+  background-image: url("../img/fond2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+#creation img {
+  margin: 10px;
+}
+#photosetvideos {
+  background-color: #000;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

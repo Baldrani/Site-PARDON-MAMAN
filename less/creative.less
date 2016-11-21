@@ -433,7 +433,7 @@ header {
 }
 
 .text-primary{
-    color:#c82300;
+    color:@theme-primary;
 }
 
 h3:hover {
@@ -456,8 +456,8 @@ h3{
      }
  }
 
- #homeHeading {
-    text-shadow: 2px 2px #c82300;
+#homeHeading {
+    text-shadow: 2px 2px @theme-primary;
 }
 
 .white{
@@ -465,7 +465,7 @@ h3{
 }
 
 .page-scroll:hover,.page-scroll:activer{
-    color: #c82300;
+    color: @theme-primary;
 }
 
 [alt="Logo Pardon Maman"]{
@@ -474,4 +474,58 @@ h3{
     position: relative;
     left: 10%;
     top: 25px;
+}
+
+#about{
+    h3{
+        color: #fff;
+        font-weight: 700;
+        a,
+        a:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+#aboutJohnStone{
+  background-image: url(https://pardonmaman.files.wordpress.com/2015/02/pardon-maman-tattoo-piercing-_-tatoueur-john-stone-work.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color : #fff;
+  display: block;
+  height: 100%;
+  position: relative;
+  .container{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+  p{
+      background-color: rgba(128, 128, 128, 0.56);
+      border-radius: 15px;
+  }
+  h2{
+      text-shadow: 2px 2px @theme-primary;
+  }
+}
+
+
+#creation{
+  background-image: url("../img/fond2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#creation img{
+  margin: 10px;
+}
+
+#photosetvideos{
+    background-color: #000;
+    color:#fff;
+    padding-top:50px;
+    padding-bottom: 50px;
 }
