@@ -61,5 +61,7 @@ h3{
  @media(max-width: 1200px){
      [src="img/logo.png"]{
          left: 0 !important;
+         width: 30% !important;
+         margin-bottom: 60px;
      }
  }
