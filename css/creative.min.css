@@ -42,6 +42,31 @@ header {
     color: #fff;
 }
 
+#aboutJohnStone{
+  background-image: url(https://pardonmaman.files.wordpress.com/2015/02/pardon-maman-tattoo-piercing-_-tatoueur-john-stone-work.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color : #fff;
+  display: block;
+  height: 100%;
+}
+
+#aboutJohnStone p{
+  background-color: rgba(128, 128, 128, 0.56);
+  border-radius: 15px;
+}
+
+#creation{
+  background-image: url("../img/fond2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#creation img{
+  margin: 10px;
+}
+
 .text-primary{
     color:#c82300;
 }
